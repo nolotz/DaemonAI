@@ -9,6 +9,7 @@ An open-source AI journal with an interview mode. Instead of staring at a blank 
 - **Interview sessions** — adaptive follow-up questions that build on your answers, streamed in real time
 - **Three swappable question frameworks** — Socratic method, Motivational Interviewing (OARS), daily review; a new template is just a JSON file in `backend/src/frameworks/`
 - **Text and voice input** — Amazon Transcribe, with a fallback to the browser's Web Speech API
+- **Voice mode (real spoken conversation)** — AI questions are read aloud via Amazon Polly (German neural voice); when playback ends, recording starts automatically and your transcribed answer is sent right away
 - **Automatic entries** — the AI summarizes the conversation, including mood (1–10) and topics
 - **History** — all entries by date, searchable
 - **Insights** — mood trend and topic frequency per week/month, with an AI-written review
@@ -24,7 +25,8 @@ Browser (React/Vite, S3 + CloudFront)
    ├─► Lambda Function URL (response streaming) ──► chat SSE ─► Bedrock (Claude)
    │        └─ JWT verified in the handler (aws-jwt-verify)
    │
-   └─► S3 (presigned PUT for audio) ──► Amazon Transcribe
+   ├─► S3 (presigned PUT for audio) ──► Amazon Transcribe
+   └─► POST /speech ──► Amazon Polly (text-to-speech, de-DE neural)
                           DynamoDB (single table, on-demand)
 ```
 

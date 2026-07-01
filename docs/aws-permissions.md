@@ -9,6 +9,7 @@ The Lambda roles are created by the CDK with least-privilege grants:
 | Profile/Sessions/Entries/Insights/Chat | `dynamodb:GetItem/PutItem/UpdateItem/Query/TransactWrite*` on the single table |
 | Sessions/Insights/Chat | `bedrock:InvokeModel`, `bedrock:InvokeModelWithResponseStream` (resource `*`, because EU inference profiles route across several regions) |
 | Transcription | `s3:GetObject/PutObject` on the audio bucket, `transcribe:StartTranscriptionJob`, `transcribe:GetTranscriptionJob` |
+| Speech | `polly:SynthesizeSpeech` |
 
 ## Deploy user / CI role
 
