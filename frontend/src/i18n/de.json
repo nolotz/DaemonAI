@@ -1,0 +1,75 @@
+{
+  "app": {
+    "name": "DaemonAI",
+    "tagline": "Dein Tagebuch, das zuhört."
+  },
+  "nav": {
+    "chat": "Gespräch",
+    "history": "Historie",
+    "insights": "Insights",
+    "signOut": "Abmelden"
+  },
+  "auth": {
+    "email": "E-Mail",
+    "password": "Passwort",
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "confirmTitle": "E-Mail bestätigen",
+    "confirmHint": "Wir haben dir einen Bestätigungscode geschickt.",
+    "code": "Bestätigungscode",
+    "confirm": "Bestätigen",
+    "toSignUp": "Neu hier? Konto erstellen",
+    "toSignIn": "Schon ein Konto? Anmelden",
+    "passwordHint": "Mindestens 10 Zeichen, mit Kleinbuchstabe und Ziffer."
+  },
+  "chat": {
+    "startTitle": "Wie möchtest du heute erzählen?",
+    "start": "Session starten",
+    "inputPlaceholder": "Schreib deine Antwort …",
+    "send": "Senden",
+    "complete": "Session abschließen",
+    "completing": "Eintrag wird erstellt …",
+    "entryCreated": "Dein Tagebucheintrag",
+    "newSession": "Neue Session starten",
+    "micStart": "Sprachaufnahme starten",
+    "micStop": "Aufnahme beenden",
+    "micProcessing": "Wird transkribiert …",
+    "micError": "Transkription fehlgeschlagen – du kannst deine Antwort tippen.",
+    "voiceMode": "Sprachmodus",
+    "speaking": "Spricht …",
+    "thinking": "…"
+  },
+  "history": {
+    "title": "Historie",
+    "searchPlaceholder": "Einträge durchsuchen …",
+    "empty": "Noch keine Einträge. Starte dein erstes Gespräch!",
+    "noResults": "Keine Treffer für deine Suche.",
+    "mood": "Stimmung"
+  },
+  "insights": {
+    "title": "Insights",
+    "week": "Woche",
+    "month": "Monat",
+    "entries": "Einträge",
+    "avgMood": "Ø Stimmung",
+    "moodTitle": "Stimmungsverlauf",
+    "topicsTitle": "Häufige Themen",
+    "summaryTitle": "Rückblick",
+    "empty": "Für diesen Zeitraum gibt es noch keine Einträge.",
+    "showTable": "Als Tabelle anzeigen",
+    "showChart": "Als Diagramm anzeigen",
+    "tableDate": "Datum",
+    "tableMood": "Stimmung (1–10)",
+    "prevPeriod": "Vorheriger Zeitraum",
+    "nextPeriod": "Nächster Zeitraum"
+  },
+  "common": {
+    "loading": "Lädt …",
+    "error": "Etwas ist schiefgelaufen.",
+    "retry": "Erneut versuchen",
+    "theme": "Design",
+    "themeLight": "Hell",
+    "themeDark": "Dunkel",
+    "themeSystem": "System"
+  }
+}

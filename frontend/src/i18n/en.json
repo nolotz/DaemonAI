@@ -1,0 +1,75 @@
+{
+  "app": {
+    "name": "DaemonAI",
+    "tagline": "Your journal that listens."
+  },
+  "nav": {
+    "chat": "Conversation",
+    "history": "History",
+    "insights": "Insights",
+    "signOut": "Sign out"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "confirmTitle": "Confirm your email",
+    "confirmHint": "We sent you a confirmation code.",
+    "code": "Confirmation code",
+    "confirm": "Confirm",
+    "toSignUp": "New here? Create an account",
+    "toSignIn": "Already have an account? Sign in",
+    "passwordHint": "At least 10 characters, with a lowercase letter and a digit."
+  },
+  "chat": {
+    "startTitle": "How would you like to reflect today?",
+    "start": "Start session",
+    "inputPlaceholder": "Type your answer …",
+    "send": "Send",
+    "complete": "Finish session",
+    "completing": "Creating your entry …",
+    "entryCreated": "Your journal entry",
+    "newSession": "Start a new session",
+    "micStart": "Start voice recording",
+    "micStop": "Stop recording",
+    "micProcessing": "Transcribing …",
+    "micError": "Transcription failed – you can type your answer.",
+    "voiceMode": "Voice mode",
+    "speaking": "Speaking …",
+    "thinking": "…"
+  },
+  "history": {
+    "title": "History",
+    "searchPlaceholder": "Search entries …",
+    "empty": "No entries yet. Start your first conversation!",
+    "noResults": "No results for your search.",
+    "mood": "Mood"
+  },
+  "insights": {
+    "title": "Insights",
+    "week": "Week",
+    "month": "Month",
+    "entries": "Entries",
+    "avgMood": "Avg. mood",
+    "moodTitle": "Mood over time",
+    "topicsTitle": "Frequent topics",
+    "summaryTitle": "Review",
+    "empty": "No entries for this period yet.",
+    "showTable": "Show as table",
+    "showChart": "Show as chart",
+    "tableDate": "Date",
+    "tableMood": "Mood (1–10)",
+    "prevPeriod": "Previous period",
+    "nextPeriod": "Next period"
+  },
+  "common": {
+    "loading": "Loading …",
+    "error": "Something went wrong.",
+    "retry": "Try again",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System"
+  }
+}

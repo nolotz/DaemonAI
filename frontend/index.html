@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="DaemonAI – dein KI-Tagebuch mit Interview-Modus" />
+    <title>DaemonAI</title>
+    <script>
+      // Dark Mode vor dem ersten Paint setzen, um Flackern zu vermeiden
+      const theme = localStorage.getItem('theme') ?? 'system';
+      const dark =
+        theme === 'dark' ||
+        (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', dark);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

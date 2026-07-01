@@ -1,0 +1,29 @@
+{
+  "name": "daemonai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "KI-Tagebuch mit Interview-Modus – serverlos auf AWS",
+  "license": "MIT",
+  "workspaces": [
+    "shared",
+    "backend",
+    "frontend",
+    "infra"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "synth": "npm run synth --workspace infra",
+    "deploy:dev": "npm run build --workspace frontend && npm run deploy:dev --workspace infra",
+    "deploy:prod": "npm run build --workspace frontend && npm run deploy:prod --workspace infra"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
